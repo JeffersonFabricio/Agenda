@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.grey,
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.cyan,
         onPressed: (){},
       ),
       body: ListView.builder(
@@ -71,6 +71,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                     padding: EdgeInsets.only(left: 10.0),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
                             contacts[index].name ?? "",
@@ -88,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                         Text(
                           contacts[index].phone ?? "",
                           style: TextStyle(
-                            fontSize: 18.0,
+                            fontSize: 20.0,
                           ),
                         ),
                       ],
